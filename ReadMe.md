@@ -1,4 +1,10 @@
+# Marwa Ashraf
 
+### [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=comfortaa&color=016EEA&size=24&width=500&lines=+Software+Engineer;Full-Stack+Web+Developer!;Student;YouTuber)](https://git.io/typing-svg)
+
+I'm interested in Web development, Software Engineering<br>
+
+Currently I'm developing Family Recipe Hub
 ## 🌐 Socials:
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/https://www.linkedin.com/in/marwa-ashraf1/) [![X](https://img.shields.io/badge/X-black.svg?logo=X&logoColor=white)](https://x.com/https://twitter.com/Marwaas88963252) 
 

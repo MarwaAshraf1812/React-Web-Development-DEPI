@@ -1,4 +1,4 @@
-# Marwa Ashraf
+<h1 style="color: F6C0D0"> Marwa Ashraf</h1>
 
 ### [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=comfortaa&color=016EEA&size=24&width=500&lines=+Software+Engineer;Full-Stack+Web+Developer!;Student;YouTuber)](https://git.io/typing-svg)
 

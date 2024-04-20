@@ -1,6 +1,7 @@
 :root {
     --primary-color: black;
-    --secondary-color: rgb(251, 167, 180);
+    --pink-color: lightpink;
+    --secondary-color: rgb(226, 133, 147);
     --border-style: 1px solid #ccc;
     --border-radius: 5px;
     --padding-standard: 10px;
@@ -34,13 +35,13 @@
 
 .title{
     text-align: center;
-    color: lightpink;
+    color: var(--pink-color);
     font-size: 2rem;
     margin-bottom: 30px;
 
 }
 h4 {
-    color: rgb(251, 167, 180);
+    color: var(--pink-color);
     font-size: 1.5rem;
     margin-bottom: 20px;
 
@@ -91,12 +92,8 @@ option{
     width: 50%;
     margin: auto;
     margin-bottom: 10px;
-    background-color: var(--secondary-color);
+    background-color: var(--pink-color);
     color: white;
     font-size: 1.2rem;
     cursor: pointer;
-}
-
-.submit:hover{
-    background-color: rgb(204, 123, 135);
 }

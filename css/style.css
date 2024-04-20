@@ -1,0 +1,102 @@
+:root {
+    --primary-color: black;
+    --secondary-color: rgb(251, 167, 180);
+    --border-style: 1px solid #ccc;
+    --border-radius: 5px;
+    --padding-standard: 10px;
+}
+
+.input-group input, select, #about, .submit {
+    padding: var(--padding-standard);
+    border: var(--border-style);
+    border-radius: var(--border-radius);
+}
+
+.title, .input-group label, .submit {
+    color: var(--primary-color);
+}
+
+.submit:hover {
+    background-color: var(--secondary-color);
+}
+
+.container{
+    width: 87%;
+    margin: 20px auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #e6e6e6;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.title{
+    text-align: center;
+    color: lightpink;
+    font-size: 2rem;
+    margin-bottom: 30px;
+
+}
+h4 {
+    color: rgb(251, 167, 180);
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+
+}
+
+form {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 20px;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    justify-content: space-between;
+
+}
+
+.input-group label {
+    width: 20%;
+    font-size: 1.2rem;
+    margin-right: 30px;
+    white-space: nowrap;
+}
+
+.input-group input {
+    width: 60%;
+    margin-bottom: 10px;
+}
+
+select {
+    width: 50%;
+    border: 1px solid #ccc;
+
+}
+option{
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+#about{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.submit{
+    width: 50%;
+    margin: auto;
+    margin-bottom: 10px;
+    background-color: var(--secondary-color);
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.submit:hover{
+    background-color: rgb(204, 123, 135);
+}

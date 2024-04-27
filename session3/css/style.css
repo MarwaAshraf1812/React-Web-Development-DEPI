@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clear-fixed {
+    clear: both;
+    list-style: none;
+}
+
+nav {
+    background-color: #ffffff;
+    overflow: hidden;
+    color: rgb(245, 171, 171);
+}
+
+nav h2 {
+    float: left;
+    margin-left: 40px;
+    padding: 10px 20px;
+}
+
+nav ul .nav-link {
+    list-style: none;
+    float: right;
+    padding: 10px 20px;
+    margin-right: 40px;
+}
+
+nav ul .nav-link a {
+    text-decoration: none;
+    color: rgb(245, 171, 171);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+nav ul .nav-link a:hover {
+    background-color: lightcoral;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+    transition: ease 0.9s;
+}
+
+.hero{
+    background-image: url(../img/heroo.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    text-align: center;
+}
+
+.hero h1{
+    color: white;
+    font-size: 50px;
+    padding-top: 200px;
+}
+
+.hero p{
+    color: white;
+    font-size: 20px;
+    padding-top: 20px;
+}
+
+.home-btn {
+    background-color: white;
+    color: lightcoral;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.home-btn:hover {
+    background-color: rgb(245, 171, 171);
+    border: 1px solid white;
+    color: white;
+    transition: ease 0.9s;
+    cursor: pointer;
+}
+
+.container{
+    width: 99%;
+    margin: auto;
+    overflow: hidden;
+    text-align: center;
+}
+
+.title{
+    font-size: 40px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.line {
+    width: 5%;
+    height: 3px;
+    background-color: lightcoral;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.product-item {
+    float: left;
+    width: 30%;
+    margin: 1%;
+    margin-left: 30px;
+    padding: 20px;
+    border: 1px solid #cfc9c9;
+    border-radius: 10px;
+}
+
+.product-item img {
+    width: 100%;
+    height: 360px;
+    border-radius: 10px;
+}
+
+.product-item h3 {
+    font-size: 22px;
+    margin-top: 10px;
+    color: lightcoral;
+}
+
+.product-item p {
+    margin-top: 10px;
+    color: #a09d9d;
+}
+
+.product-item button {
+    background-color: lightcoral;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.product-item button:hover {
+    background-color: white;
+    color: lightcoral;
+    border: 1px solid lightcoral;
+    transition: ease 0.9s;
+    cursor: pointer;
+}

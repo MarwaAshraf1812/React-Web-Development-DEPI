@@ -2,4 +2,4 @@
 <img src="./img/home.png">
 
 # product PAGE
-<img src="./img/product.png.png">
+<img src="./img/product.png">

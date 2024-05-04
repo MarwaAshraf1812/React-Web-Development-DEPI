@@ -105,7 +105,7 @@ nav .nav-links a:hover::after{
 /********************ABOUT*********************/
 section {
     padding: 50px 0;
-    margin: auto 30px;
+    margin: 50px auto;
     height: 100vh;
 }
 
@@ -177,6 +177,7 @@ section {
     margin: auto;
     text-align: center;
     height: 100vh;
+
 }
 
 .captains-section h2 {
@@ -236,6 +237,91 @@ section {
 
 .cap-btn:hover {
     background-color: rgb(100, 168, 170);
+}
+
+/********************GALLERY*********************/
+.gallery-section {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+}
+
+.gallery-section h2 {
+    font-size: 35px;
+    color: cadetblue;
+    margin-bottom: 20px;
+}
+
+.gallery-container {
+    overflow: hidden;
+    margin: 0 auto;
+    width: 70%;
+    height: 100vh;
+}
+
+.gallery-container img {
+    float: left; 
+    width: 18%;
+    margin: 0.5%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);/
+}
+
+.img1, .img3, .img5, .img7, .img9 {
+    height: 280px;
+}
+
+.img4, .img2, .img6, .img8, .img10 {
+    height: 200px;
+}
+
+.gallery-container img:hover {
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+/******************TEST*******************/
+.testimonials-section {
+    background-color: #f0f0f0;
+    text-align: center;
+    height: 70vh;
+}
+
+.testimonials-section h2 {
+    font-size: 35px;
+    color: cadetblue;
+    margin-bottom: 20px;
+}
+
+.testimonials-container {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.testimonial {
+    float: left; 
+    width: 30%; 
+    margin: 1.5%; 
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+    border-radius: 5px; 
+    text-align: center; 
+}
+.testimonial p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.test-p {
+    font-weight: bold;
+    color: cadetblue;
+}
+.testimonial img {
+    width: 50%;
+    height: 150px;
+    border-radius: 50%; 
+    margin: 10px 0;
 }
 
 /********************CONTACT*********************/

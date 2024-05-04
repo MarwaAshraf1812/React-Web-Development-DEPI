@@ -8,7 +8,7 @@
 <img src="img/about-s.png" alt="Image">
 
 # CAPTAINS
-<img src="img/captin-s.png" alt="Image">
+<img src="img/captins-ss.png" alt="Image">
 
 # GALLARY
 <img src="img/gallary-s.png" alt="Image">

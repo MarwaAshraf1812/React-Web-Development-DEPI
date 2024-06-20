@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet"/>
+    <title>Booking Flight</title>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="home" id="Home">
+        <nav class="navbar-container">
+            <div class="nav-con">
+                <div class="logo">
+                    <a href="#" class="logo-text"><span>Tr</span>avel</a>
+                </div>
+                <div class="nav-items">
+                    <ul class="links">
+                        <li class="nav-item"><a class="nav-link" href="#Home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#About">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#Explore">Explore</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#Blog">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#Offer">Offer</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#Contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="clr"></div>
+        <div class="home-content">
+            <div class="home-text">
+                <h1>Travel <br> website <span>design</span></h1>
+                <p>Explore The World With Us</p>
+            </div>
+        </div>
+        <div class="clr"></div>
+
+        <!-- Form Part -->
+        <div class="container">
+            <div class="form-container">
+                <form class="form-content" action="">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" id="cityInput" name="city" class="form-control" placeholder="Destination">
+                        </div>
+                        <div class="form-group">
+                            <label for="checkInInput" class="form-label">Check In</label>
+                            <input type="date" id="checkInInput" name="checkIn" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="checkOutInput" class="form-label">Check Out</label>
+                            <input type="date" id="checkOutInput" name="checkOut" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <select name="Adults" id="adultsSelect" class="form-select">
+                                <option selected>Adults</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <select name="Children" id="childrenSelect" class="form-select">
+                                <option selected>Children</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <select name="Rooms" id="roomsSelect" class="form-select">
+                                <option selected>Rooms</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <select name="RoomType" id="roomTypeSelect" class="form-select">
+                                <option selected>Room Type</option>
+                                <option value="1">Single</option>
+                                <option value="2">Double</option>
+                            </select>
+                        </div>
+                        <div class="btn-container">
+                            <button type="submit" class="btn">Check Availability</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="about-section" id="About">
+        <div class="about-content">
+            <h1 class="heading">About Us</h1>
+            <div class="about-text">
+                <div class="content-text">
+                    <h3 class="sub-text">Flights inside Egypt</h3>
+                    <p>Enjoy with us the best trips inside Egypt, book with us now and enjoy offers for tourist trips inside Egypt, spend the best times with us and get the best domestic trip offers, get tourist trips in Egypt at the lowest prices and the best features, get the best discounts when you book domestic tourism offers</p>
+                </div>
+            </div>
+            <div class="carousel-container">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/travel1.jpg" alt="Image 1">
+                    </div>
+                    <!-- Uncomment the following blocks for more images -->
+                    <!--
+                    <div class="carousel-item">
+                        <img src="images/travel2.png" alt="Image 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/travel3.jpg" alt="Image 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/travel4.webp" alt="Image 4">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/travel5.jpg" alt="Image 5">
+                    </div>
+                    -->
+                </div>
+                <!-- Uncomment the following buttons for carousel controls -->
+                <!--
+                <button class="carousel-control prev" aria-label="Previous">&lsaquo;</button>
+                <button class="carousel-control next" aria-label="Next">&rsaquo;</button>
+                -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Explore Section -->
+    <section class="explore" id="Explore">
+        <div class="explore-container">
+            <h1 class="heading">Explore</h1>
+            <div class="explore-text">
+                <h3 class="sub-text">We'll take care of everything :</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea enim nisi tenetur nesciunt? Rerum, odio voluptatem dolore illum laboriosam earum architecto voluptas fugiat, reiciendis iste perferendis similique, corporis deserunt voluptate asperiores nobis amet repellat cum voluptates consequuntur? Distinctio, tempore harum sed nostrum molestiae voluptatem suscipit corrupti! Facere earum ipsum accusamus.</p>
+            </div>
+            <div class="explore-video">
+                <video muted loop src="images/This_is_Egypt(720p).mp4" controls class="vid"></video>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="blog" id="Blog">
+        <div class="blog-container">
+            <h1 class="heading">Blog</h1>
+            <div class="blog-content">
+                <div class="blog-item">
+                    <img src="images/North Coast.jpg" class="card-img" alt="North Coast">
+                    <div class="card-body">
+                        <h5>North Coast</h5>
+                        <p class="card-text">Enjoy the best tourist trips in North cost, book with us now and get the best offers for tourist trips in North cost.</p>
+                        <h4 class="card-title"><a href="#">Read More <i class="read"></i></a></h4>
+                    </div>
+                </div>
+                <div class="blog-item">
+                    <img src="images/North Coast.jpg" class="card-img" alt="Sharm El Sheikh">
+                    <div class="card-body">
+                        <h5>Sharm El Sheikh</h5>
+                        <p class="card-text">Enjoy the best tourist trips in Sharm El Sheikh, book with us now and get the best offers for tourist trips in Sharm.</p>
+                        <h4 class="card-title"><a href="#">Read More <i class="read"></i></a></h4>
+                    </div>
+                </div>
+                <div class="blog-item">
+                    <img src="images/North Coast.jpg" class="card-img" alt="Hurghada">
+                    <div class="card-body">
+                        <h5>Hurghada</h5>
+                        <p class="card-text">Enjoy the best tourist trips in Hurghada, book with us now and get the best offers for tourist trips in Hurghada.</p>
+                        <h4 class="card-title"><a href="#">Read More <i class="read"></i></a></h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clr"></div>
+    </section>
+
+    <!-- Offer Section -->
+    <section class="offer" id="Offer">
+        <div class="offer-container">
+            <h1 class="heading">Offer</h1>
+            <div class="offer-content">
+                <div class="offer-item">
+                    <img src="images/Alex.jpg" class="card-img" alt="alex">
+                    <div class="card-body">
+                        <h4>Alexandria</h4>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <h5 class="offer-price">Price : <span> 1500 LE </span> 1000 LE </h5>
+                        <a href="#" class="offer-btn">Booking</a>
+                    </div>
+                </div>
+                <div class="offer-item">
+                    <img src="images/Alex.jpg" class="card-img" alt="alex">
+                    <div class="card-body">
+                        <h4>Alexandria</h4>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <h5 class="offer-price">Price : <span> 1500 LE </span> 1000 LE </h5>
+                        <a href="#" class="offer-btn">Booking</a>
+                    </div>
+                </div>
+                <div class="offer-item">
+                    <img src="images/Alex.jpg" class="card-img" alt="alex">
+                    <div class="card-body">
+                        <h4>Alexandria</h4>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <h5 class="offer-price">Price : <span> 1500 LE </span> 1000 LE </h5>
+                        <a href="#" class="offer-btn">Booking</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clr"></div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="Contact">
+        <div class="contact-container">
+            <h1 class="heading">Contact</h1>
+            <div class="contact-content">
+                <form action="">
+                    <div class="contact-form-row">
+                        <div class="contact-form-group">
+                            <input type="text" id="nameInput" name="name" class="contact-form-control" placeholder="Name">
+                        </div>
+                        <div class="contact-form-group">
+                            <input type="email" id="emailInput" name="email" class="contact-form-control" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="contact-form-row">
+                        <div class="contact-form">
+                            <input type="text" id="subjectInput" name="subject" class="contact-form-control1" placeholder="Subject">
+                        </div>
+                    </div>
+                    <div class="contact-form-row2">
+                        <div class="contact-form">
+                            <textarea name="message" id="messageInput" class="contact-form-control2" placeholder="Message"></textarea>
+                        </div>
+                    </div>
+                    <div class="contact-form-row">
+                        <div class="contact-form-group">
+                            <button type="submit" class="contact-btn">Send Message</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>Copy Right 2022 © By <a href="#">Misr University for Science and Technology</a> All Rights Reserved</p>
+    </footer>
+</body>
+</html>

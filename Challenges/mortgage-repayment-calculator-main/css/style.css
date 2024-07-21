@@ -1,0 +1,65 @@
+body {
+    background-color: hsl(200, 26%, 54%);
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.card {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn-warning {
+    background-color: hsl(61, 70%, 52%);
+    border-color: #ffc107;
+}
+
+.bg-dark {
+    background-color: #1c2b36 !important;
+}
+
+.text-white {
+    color: #fff !important;
+}
+
+.display-4 {
+    font-size: 2.5rem;
+}
+.result-card {
+    background-color: hsl(202, 55%, 16%);
+
+}
+.image {
+    width: 30%;
+    height: 30%;
+}
+
+.card-image {
+    width: 100%;
+    height: 100%;
+
+}
+.img-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.input-group-text {
+    background-color: hsl(200, 26%, 54%);
+    color: #fff;
+    border-color: #ccc;
+}
+
+/* Style for the border around the radio buttons */
+.border{
+    /* border-color: hsl(61, 70%, 52%) !important; */
+    padding: 5px;
+    margin: 5px;
+}
+
+.title {
+    font-size: 1.2rem;
+    color: hsl(200, 26%, 54%) !important;
+}
+
+

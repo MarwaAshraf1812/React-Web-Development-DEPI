@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUDS</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+
+    <div class="crudContainer container-fluid py-5 vh-100">
+        <div class="container">
+            <div class="CrudContent">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="crudHeader">
+                            <h1 class="text-center text-warning p-2">CRUDS</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-4">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="ProductName" class="mb-1 fw-bold">Product Name</label>
+                            <input type="text" id="ProductName" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="ProductPrice" class="mb-1 fw-bold">Product Price</label>
+                            <input type="text" id="ProductPrice" class="form-control">
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-4">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="ProductCat" class="mb-1 fw-bold">Product Category</label>
+                            <input type="text" id="ProductCat" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="ProductStatus" class="mb-1 fw-bold">Product Status</label>
+                            <input type="text" id="ProductStatus" class="form-control">
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-5">
+                    <div class="col-md-12 text-center">
+                        <button class="btn btn-warning text-white" onclick="AddValue()" id="add">Add The Product</button>
+                    </div>
+                </div>
+            </div>
+            <div class="crudTable">
+                <div class="table-responsive">
+                    <table class="table table-bordered table-striped text-center">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th>Index</th>
+                                <th>Name</th>
+                                <th>Price</th>
+                                <th>Status</th>
+                                <th>Category</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody id="TableBody">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

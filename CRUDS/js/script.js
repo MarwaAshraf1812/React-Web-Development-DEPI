@@ -20,6 +20,9 @@ addBtnEl.addEventListener('click', function(product) {
         clearData()
         productIndex++;
     }
+    else {
+        alert('Please fill all fields');
+    }
 });
 
 function addProductToTable(product) {

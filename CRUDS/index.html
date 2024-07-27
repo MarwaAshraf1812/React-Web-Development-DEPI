@@ -9,14 +9,13 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 <body>
-
     <div class="crudContainer container-fluid py-5 vh-100">
         <div class="container">
             <div class="CrudContent">
                 <div class="row">
                     <div class="col-md-12">
                         <div class="crudHeader">
-                            <h1 class="text-center text-warning p-2">CRUDS</h1>
+                            <h1 class="text-center text-warning p-2">Product Mangement</h1>
                         </div>
                     </div>
                 </div>
@@ -49,9 +48,16 @@
                     </div>
                 </div>
                 <div class="row mb-5">
-                    <div class="col-md-12 text-center">
-                        <button class="btn btn-warning text-white" onclick="AddValue()" id="add">Add The Product</button>
+                    <div class="col-md-12 text-center gap-4">
+                        <button class="btn btn-outline-warning" id="add">Add The Product</button>
+                        <button class="btn btn-outline-secondary px-5" id="reset">Reset</button>
+                        <button class="btn btn-outline-danger px-5" id="clear">Clear data</button>
                     </div>
+                </div>
+            </div>
+            <div class="search">
+                <div class="form-group m-4 w-75 mx-auto">
+                    <input type="text" id="search" class="form-control border border-warning" placeholder="Search">
                 </div>
             </div>
             <div class="crudTable">
@@ -74,7 +80,6 @@
             </div>
         </div>
     </div>
-
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
 </body>

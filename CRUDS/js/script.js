@@ -20,16 +20,16 @@ addBtnEl.addEventListener('click', function() {
         };
         addProductToTable(product);
         saveProductsToLocal(product);
-        clearData();
+        resetData();
         productIndex++;
     } else {
         alert('Please fill all fields');
     }
 });
 
-// handles deleting data from inputs
+// handles deleting a data from inputs
 resetBtnEl.addEventListener('click', function() {
-    clearData();
+    resetData();
 });
 
 // handles deleting all data from local storage and the table
@@ -56,13 +56,14 @@ function addProductToTable(product) {
     productTableBody.appendChild(newRow);
 }
 
-function clearData() {
+function resetData() {
     productName.value = '';
     productPrice.value = '';
     productStatus.value = '';
     productCategory.value = '';
 }
 
+// save the product to local storage. It retrieves the existing products, adds the new product to the list, and saves it back to local storage.
 function saveProductsToLocal(product) {
     let products = JSON.parse(localStorage.getItem('products')) || [];
     products.push(product);

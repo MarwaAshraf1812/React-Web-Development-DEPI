@@ -6,6 +6,7 @@ var addBtnEl = document.getElementById('add');
 var resetBtnEl = document.getElementById('reset');
 var clearBtnEl = document.getElementById('clear');
 var productTableBody = document.getElementById('TableBody');
+var searchInput = document.getElementById('search');
 var productIndex = 1;
 
 // handles adding new products, saving them to local storage, and updating the table.
@@ -49,13 +50,14 @@ function addProductToTable(product) {
         <td>${product.Status}</td>
         <td>${product.Category}</td>
         <td>
-            <button class="btn btn-danger text-white" onclick="deleteRow(this, ${product.Index})">Delete</button>
-            <button class="btn btn-success text-white" onclick="updateRow(this, ${product.Index})">Update</button>
+            <button class="btn btn-danger text-white" onclick="deleteProduct(this, ${product.Index})">Delete</button>
+            <button class="btn btn-success text-white" onclick="updateproduct(this, ${product.Index})">Update</button>
         </td>
     `;
     productTableBody.appendChild(newRow);
 }
 
+// resets the input fields
 function resetData() {
     productName.value = '';
     productPrice.value = '';
@@ -71,20 +73,45 @@ function saveProductsToLocal(product) {
 }
 
 // deletes the product row from the table and local storage
-function deleteRow(button, index) {
+function deleteProduct(button, index) {
     let products = JSON.parse(localStorage.getItem('products')) || [];
     products = products.filter(product => product.Index !== index);
     localStorage.setItem('products', JSON.stringify(products));
     button.parentElement.parentElement.remove();
 }
 
+// updates the product row in the table and local storage
+function updateproduct(button, index) {
+    let products = JSON.parse(localStorage.getItem('products')) || [];
+    // find: Return the first element which satisfies the condition
+    let product = products.find(product => product.Index === index);
+    productName.value = product.Name;
+    productPrice.value = product.Price;
+    productStatus.value = product.Status;
+    productCategory.value = product.Category;
+    deleteProduct(button, index);
+}
+
+// filters the products based on the search input
+searchInput.addEventListener('input', function() {
+    let products = JSON.parse(localStorage.getItem('products')) || [];
+    let searchValue = searchInput.value.toLowerCase();
+    productTableBody.innerHTML = '';
+    products.forEach(product => {
+        if (product.Name.toLowerCase().includes(searchValue) || product.Category.toLowerCase().includes(searchValue) || product.Status.toLowerCase().includes(searchValue)) {
+            addProductToTable(product);
+        }
+    });
+});
+
+// displays the products from local storage
 function displayProducts() {
     let products = JSON.parse(localStorage.getItem('products')) || [];
     products.forEach(product => {
         addProductToTable(product);
         productIndex++;
     });
-}
+};
 
 document.addEventListener('DOMContentLoaded', function() {
     displayProducts();

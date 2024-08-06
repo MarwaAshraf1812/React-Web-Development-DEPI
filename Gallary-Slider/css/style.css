@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.shop-title {
+    margin: 2rem 0;
+    color: lightslategray;
+}
+
+.shop-title::after {
+    position: absolute;
+    left: 50%;
+    content: '';
+    display: block;
+    width: 150px;
+    height: 3px;
+    background-color: lightpink;
+    margin: 1rem 0;
+    transform: translate(-50%, -50%);
+}
+
+.card {
+    padding: 1rem;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 450px;
+    position: relative;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.image-desc {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    width: 80%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    color:  lightslategray;
+    text-align: center;
+    padding: 1rem;
+    font-size: 20px;
+}
+
+
+.image-desc h3 {
+    color: lightslategray;
+}
+
+.image-desc p {
+    font-size: 15px;
+}
+
+/*layout card*/
+.lay {
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1050;
+}
+.layout-model {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.layout-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    max-width: 800px;
+    width: 90%; /* Ensure responsiveness */
+    height: 70%; /* Decrease height */
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+/* Title styling */
+.layout-title {
+    color: lightpink;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Close button styling */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    color: lightpink !important;
+}
+
+/* Flex container for image and info */
+.card-layout {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    flex: 1;
+}
+
+/* Image container */
+.image-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    padding: 10px;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+/* Info container */
+.info-container {
+    flex: 1;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+/* Description styling */
+.layoutDescription {
+    color: lightslategray;
+    line-height: 1.5;
+    margin-top: 10px;
+}
+
+/* Icons container */
+.icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20%;
+}
+
+/* Icon styling */
+.icons i {
+    cursor: pointer;
+    font-size: 24px;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.icons i:hover {
+    color: lightpink;
+}
+
+/* Button styling */
+.layout-btn {
+    background-color: lightpink;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: 1px solid lightpink;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all ease 0.3s;
+    margin-top: 10px;
+    box-shadow: inset 0 0 3px;
+}
+
+.layout-btn:hover {
+    background-color: white;
+    color: lightpink;
+    border: 1px solid lightpink;
+    border-radius: 5px;
+}
+
+/* Modal body */
+.modal-body {
+    height: 100%;
+    padding: 0;
+    overflow-y: auto; /* Add scroll for overflow */
+}

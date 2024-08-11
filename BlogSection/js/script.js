@@ -24,20 +24,23 @@ async function getNews(url) {
 
         const article = articles[0];
         console.log(article);
-
-        postTitle.innerHTML = article.title || "No title available";
-        postAuthor.innerHTML = article.author || "No author available";
-        postDate.innerHTML = article.publishedAt || "No date available";
-
-
-        readBtn.addEventListener('click', () => {
-            window.open(article.url, '_blank');
-        });
-
+        displayArticle(article);
 
     } catch (error) {
         console.error(error);
     }
     
 }
+
+function displayArticle(article) {
+    postTitle.innerHTML = article.title || "No title available";
+    postAuthor.innerHTML = article.author || "No author available";
+    postDate.innerHTML = article.publishedAt || "No date available";
+
+
+    readBtn.addEventListener('click', () => {
+        window.open(article.url, '_blank');
+    });
+}
+
 getNews(url);

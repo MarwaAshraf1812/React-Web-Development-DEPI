@@ -1,0 +1,30 @@
+.logout {
+  cursor: pointer;
+}
+
+.nav-link {
+  cursor: pointer;
+  transition: all 0.3s;
+  position: relative; /* Necessary for ::after positioning */
+}
+.nav-link:hover {
+  color: rgb(13, 110, 253) !important;
+}
+.nav-item i:hover {
+  color: rgb(13, 110, 253) !important;
+  cursor: pointer;
+}
+.nav-comp .nav-link::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: rgb(13, 110, 253);
+  transition: width 0.3s; /* Smooth underline animation */
+  position: absolute;
+  bottom: -2px; /* Adjust to position the underline below text */
+  left: 0;
+}
+.nav-comp .nav-link:hover::after {
+  width: 100%; /* Expands the underline */
+}

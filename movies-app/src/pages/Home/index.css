@@ -1,0 +1,12 @@
+h1 {
+  font-size: 22px !important;
+}
+p {
+  color: rgb(13, 110, 253);
+}
+.brdr {
+  width: 100%;
+  height: 1px;
+  background-color: #5d5d5d;
+  margin: 40px 0;
+}

@@ -1,0 +1,1061 @@
+/*Global Style*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: #0eb482;
+    --Maintext-color: #000;
+    --paraghraph-color: #4C4D4D;
+    --second-textColor: #DE556A;
+    --section-bg: #FFFFFF;
+    --sectionbgcolor: #F8F9FA;
+}
+
+body {
+    background-image: url('../images/intro-bg.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*Section Titles*/
+.heading {
+    position: relative;
+    margin-bottom: 5rem;
+}
+
+.heading h2.par {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    padding: 0.5rem !important;
+    font-size: 2rem !important;
+    font-weight: bold;
+}
+.heading-shadow::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40%;
+    height: 3px;
+    background-color: var(--main-color);
+    z-index: 1;
+}
+
+.heading-shadow::before {
+    content: attr(data-content);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4rem;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.1);
+    z-index: 0;
+    white-space: nowrap;
+}
+
+
+/* Navbar base styling */
+.navbar {
+    transition: background-color 0.3s;
+    z-index: 1030;
+    background-color: rgba(0, 0, 0, 0.4) !important;
+}
+
+/* Navbar brand image styling */
+.navbar .navbar-brand img {
+    max-height: 50px;
+}
+
+/* Navbar item styling */
+.nav-item {
+    font-size: 18px;
+    padding: 0.3rem;
+}
+
+/* Navbar link styling */
+.navbar-nav .nav-link {
+    color: #fff !important;
+    transition: color 0.3s ease;
+}
+
+/* Navbar link hover and active state styling */
+.nav-link:hover,
+.nav-link.active,
+.navbar {
+    color: #0eb482 !important;
+    cursor: pointer;
+}
+
+
+/* Icons container styling */
+.icons .icon {
+    transition: color 0.3s ease;
+}
+
+.icons .ic1:hover {
+    color: rgb(56, 126, 240) !important;
+    cursor: pointer;
+}
+
+.icons .ic2:hover {
+    color: rgb(89, 123, 202) !important; 
+    cursor: pointer;
+}
+
+.icons .ic3:hover {
+    color: rgb(202, 71, 132) !important; 
+    cursor: pointer;
+}
+
+/* Responsive styling for small screens */
+@media (max-width: 991.98px) {
+    /* Navbar accordion width adjustment */
+    .navbar-accordion {
+        width: 100%; 
+    }
+
+    /* Header nav styling for small screens */
+    #header-nav {
+        position: absolute;
+        top: 110%;
+        left: 0;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.4) !important;
+        transition: max-height 0.5s ease;
+        max-height: 0;
+        overflow: hidden; 
+        z-index: 1;
+    }
+
+    /* Expanded state for header nav */
+    #header-nav.show {
+        max-height: 100vh;
+    }
+
+    /* Navbar nav styling for small screens */
+    .navbar-nav {
+        width: 100%;
+        text-align: left;
+        padding: 1rem;
+    }
+
+    /* Nav item styling for small screens */
+    .navbar-nav .nav-item {
+        width: 100%;
+        font-size: 1rem !important;
+    }
+
+    /* Nav link styling for small screens */
+    .navbar-nav .nav-item .nav-link {
+        display: block;
+        padding: 0.5rem 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        transition: background-color 0.5s ease;
+    }
+}
+
+/*Header*/
+
+/* Overlay for header */
+.header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Content inside header */
+.header .content {
+    z-index: 1;
+}
+
+/* Button styles */
+.home-btn {
+    border-color: var(--main-color);
+}
+
+.home-btn:hover {
+    background-color: var(--main-color);
+    color: white;
+}
+
+/* Scroll down arrow styling */
+.scroll-down-arrow {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.scroll-down-arrow span {
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+/* Animated text styling */
+.animated-text {
+    font-size: 40px !important;
+    font-weight: 600;
+    min-width: 280px;
+    position: relative;
+    display: inline-block;
+    color: white;
+}
+
+.animated-text span::before {
+    content: "Youtuber";
+    animation: words 20s infinite steps(14);
+}
+
+.animated-text span::after {
+    content: "";
+    position: absolute;
+    animation: cursor .8s infinite, typing 10s steps(14) infinite alternate;
+}
+
+/* Keyframes for animations */
+
+@keyframes words {
+    0% {
+        content: "";
+    }
+
+    0.69% {
+        content: "I";
+    }
+
+    1.38% {
+        content: "I'";
+    }
+
+    2.08% {
+        content: "I'm";
+    }
+
+    2.7% {
+        content: "I'm ";
+    }
+
+    3.47% {
+        content: "I'm S";
+    }
+
+    4.16% {
+        content: "I'm Si";
+    }
+
+    4.86% {
+        content: "I'm Sim";
+    }
+
+    5.5% {
+        content: "I'm Simo"
+    }
+
+    6.25% {
+        content: "I'm Simon"
+    }
+
+    6.94% {
+        content: "I'm Simone";
+    }
+
+    7.63% {
+        content: "I'm Simone ";
+    }
+
+    8.33% {
+        content: "I'm Simone O";
+    }
+
+    9.02% {
+        content: "I'm Simone Ol";
+    }
+
+    9.72% {
+        content: "I'm Simone Oli";
+    }
+
+    10.41% {
+        content: "I'm Simone Oliv";
+    }
+
+    11.1% {
+        content: "I'm Simone Olivi";
+    }
+
+    11.8% {
+        content: "I'm Simone Olivia";
+    }
+
+    12.5% {
+        content: "I'm Simone Olivia.";
+    }
+
+    13.19% {
+        content: "I'm Simone Olivia";
+    }
+
+    13.8% {
+        content: "I'm Simone Olivi";
+    }
+
+    14.58% {
+        content: "I'm Simone Oliv";
+    }
+
+    15.27% {
+        content: "I'm Simone Oli";
+    }
+
+    15.97% {
+        content: "I'm Simone Ol";
+    }
+
+    15.66% {
+        content: "I'm Simone O";
+    }
+
+    17.36% {
+        content: "I'm Simone ";
+    }
+
+    18.05% {
+        content: "I'm Simone";
+    }
+
+    18.75% {
+        content: "I'm Simon "
+    }
+
+    19.44% {
+        content: "I'm Simo"
+    }
+
+    20.13% {
+        content: "I'm Sim";
+    }
+
+    20.83% {
+        content: "I'm Si";
+    }
+
+    21.52% {
+        content: "I'm S";
+    }
+
+    22.2% {
+        content: "I'm ";
+    }
+
+    22.91% {
+        content: "I'm";
+    }
+
+    23.61% {
+        content: "I'";
+    }
+
+    24.3% {
+        content: "I";
+    }
+
+    24.9% {
+        content: "";
+    }
+
+    25% {
+        content: "I";
+    }
+
+    25.69% {
+        content: "I";
+    }
+
+    26.38% {
+        content: "I'";
+    }
+
+    27.08% {
+        content: "I'm";
+    }
+
+    27.7% {
+        content: "I'm ";
+    }
+
+    28.47% {
+        content: "I'm a";
+    }
+
+    29.16% {
+        content: "I'm a ";
+    }
+
+    29.86% {
+        content: "I'm a F";
+    }
+
+    30.5% {
+        content: "I'm a Fr"
+    }
+
+    31.25% {
+        content: "I'm a Fre"
+    }
+
+    31.94% {
+        content: "I'm a Free";
+    }
+
+    32.63% {
+        content: "I'm a Freel";
+    }
+
+    33.33% {
+        content: "I'm a Freela";
+    }
+
+    34.02% {
+        content: "I'm a Freelan";
+    }
+
+    34.72% {
+        content: "I'm a Freelanc";
+    }
+
+    35.41% {
+        content: "I'm a Freelance";
+    }
+
+    36.1% {
+        content: "I'm a Freelancer";
+    }
+
+    36.8% {
+        content: "I'm a Freelancer.";
+    }
+
+    37.5% {
+        content: "I'm a Freelancer.";
+    }
+
+    38.19% {
+        content: "I'm a Freelancer";
+    }
+
+    38.8% {
+        content: "I'm a Freelance";
+    }
+
+    39.58% {
+        content: "I'm a Freelanc";
+    }
+
+    40.27% {
+        content: "I'm a Freelan";
+    }
+
+    40.97% {
+        content: "I'm a Freela";
+    }
+
+    41.66% {
+        content: "I'm a Freel";
+    }
+
+    42.36% {
+        content: "I'm a Free";
+    }
+
+    43.05% {
+        content: "I'm a Fre";
+    }
+
+    43.75% {
+        content: "I'm a Fr"
+    }
+
+    44.44% {
+        content: "I'm a F"
+    }
+
+    45.13% {
+        content: "I'm a ";
+    }
+
+    45.83% {
+        content: "I'm a";
+    }
+
+    46.52% {
+        content: "I'm ";
+    }
+
+    47.2% {
+        content: "I'm";
+    }
+
+    47.91% {
+        content: "I'";
+    }
+
+    48.61% {
+        content: "I";
+    }
+
+    49.3% {
+        content: "";
+    }
+
+    49.9% {
+        content: "";
+    }
+
+    50% {
+        content: "I";
+    }
+
+    50.69% {
+        content: "I";
+    }
+
+    51.38% {
+        content: "I'";
+    }
+
+    52.08% {
+        content: "I'm";
+    }
+
+    52.7% {
+        content: "I'm ";
+    }
+
+    53.47% {
+        content: "I'm a";
+    }
+
+    54.16% {
+        content: "I'm a ";
+    }
+
+    54.86% {
+        content: "I'm a P";
+    }
+
+    55.5% {
+        content: "I'm a Ph"
+    }
+
+    56.25% {
+        content: "I'm a Pho"
+    }
+
+    56.94% {
+        content: "I'm a Phot";
+    }
+
+    57.63% {
+        content: "I'm a Photo";
+    }
+
+    58.33% {
+        content: "I'm a Photog";
+    }
+
+    59.02% {
+        content: "I'm a Photogr";
+    }
+
+    59.72% {
+        content: "I'm a Photogra";
+    }
+
+    60.41% {
+        content: "I'm a Photograp";
+    }
+
+    61.1% {
+        content: "I'm a Photograph";
+    }
+
+    61.8% {
+        content: "I'm a Photographe";
+    }
+
+    62.5% {
+        content: "I'm a Photographer.";
+    }
+
+    63.19% {
+        content: "I'm a Photographer";
+    }
+
+    63.8% {
+        content: "I'm a Photographe";
+    }
+
+    64.58% {
+        content: "I'm a Photograph";
+    }
+
+    65.27% {
+        content: "I'm a Photograp";
+    }
+
+    65.97% {
+        content: "I'm a Photogra";
+    }
+
+    66.66% {
+        content: "I'm a Photogr";
+    }
+
+    67.36% {
+        content: "I'm a Photog";
+    }
+
+    68.05% {
+        content: "I'm a Photo";
+    }
+
+    68.75% {
+        content: "I'm a Phot"
+    }
+
+    69.44% {
+        content: "I'm a Pho"
+    }
+
+    70.13% {
+        content: "I'm a Ph";
+    }
+
+    70.83% {
+        content: "I'm a P";
+    }
+
+    71.52% {
+        content: "I'm a";
+    }
+
+    72.2% {
+        content: "I'm ";
+    }
+
+    72.91% {
+        content: "I'm";
+    }
+
+    73.61% {
+        content: "I'";
+    }
+
+    74.3% {
+        content: "I";
+    }
+
+    74.9% {
+        content: "";
+    }
+
+    75% {
+        content: "I";
+    }
+
+    75.69% {
+        content: "I";
+    }
+
+    76.38% {
+        content: "I'";
+    }
+
+    77.08% {
+        content: "I'm";
+    }
+
+    77.7% {
+        content: "I'm ";
+    }
+
+    78.47% {
+        content: "I'm a";
+    }
+
+    79.16% {
+        content: "I'm a ";
+    }
+
+    79.86% {
+        content: "I'm a D";
+    }
+
+    80.5% {
+        content: "I'm a De"
+    }
+
+    81.25% {
+        content: "I'm a Des"
+    }
+
+    81.94% {
+        content: "I'm a Desi";
+    }
+
+    82.63% {
+        content: "I'm a Desig";
+    }
+
+    83.33% {
+        content: "I'm a Design";
+    }
+
+    84.02% {
+        content: "I'm a Designe";
+    }
+
+    84.72% {
+        content: "I'm a Designer";
+    }
+
+    85.41% {
+        content: "I'm a Designer.";
+    }
+
+    86.1% {
+        content: "I'm a Designer.";
+    }
+
+    86.8% {
+        content: "I'm a Designer.";
+    }
+
+    87.5% {
+        content: "I'm a Designer.";
+    }
+
+    88.19% {
+        content: "I'm a Designer";
+    }
+
+    88.8% {
+        content: "I'm a Designe";
+    }
+
+    89.58% {
+        content: "I'm a Design";
+    }
+
+    90.27% {
+        content: "I'm a Desig";
+    }
+
+    90.97% {
+        content: "I'm a Desi";
+    }
+
+    91.66% {
+        content: "I'm a Des";
+    }
+
+    92.36% {
+        content: "I'm a De";
+    }
+
+    93.05% {
+        content: "I'm a D";
+    }
+
+    93.75% {
+        content: "I'm a "
+    }
+
+    94.44% {
+        content: "I'm a"
+    }
+
+    95.13% {
+        content: "I'm ";
+    }
+
+    95.83% {
+        content: "I'm";
+    }
+
+    96.52% {
+        content: "I'";
+    }
+
+    97.2% {
+        content: "I";
+    }
+
+    97.91% {
+        content: "I";
+    }
+
+    98.61% {
+        content: "";
+    }
+
+    99.3% {
+        content: "";
+    }
+
+    100% {
+        content: "";
+    }
+}
+
+@keyframes typing {
+    0%, 5%, 20%, 25%, 40%, 45%, 60%, 65%, 80%, 85% {
+        width: calc(100% + 8px);
+    }
+    10%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95% {
+        width: 0;
+    }
+}
+
+
+/* Name highlight */
+.text .highlight {
+    color: var(--main-color);
+}
+
+/* Paragraph styling */
+.text .par {
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+/* About button */
+.about-btn {
+    background-color: var(--main-color);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.about-btn:hover {
+    background-color: #0c8e6d;
+    color: white;
+}
+
+/* Info list styling */
+.info-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.info-list li {
+    padding: 12px 0;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.info-label {
+    font-weight: 600;
+    margin-right: 5px;
+}
+
+.info-link {
+    color: var(--main-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.info-link:hover {
+    color: #0c8e6d;
+}
+
+/* Featured box styling */
+.featured-box {
+    padding: 1.5rem;
+}
+
+.featured-box h4 {
+    font-size: 2rem;
+    margin-bottom: 5px;
+}
+
+.featured-box p {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Service Section */
+.back-color {
+    background-color: var(--sectionbgcolor);
+}
+
+.service-box-icon {
+    font-size: 30px;
+    color: var(--main-color);
+    margin-right: 1rem;
+    width: 15%;
+    text-align: center;
+    height: 15%;
+    padding: 1rem;
+}
+
+
+.card .badge {
+    background-color: var(--main-color);
+    color: white;
+    font-size: 16px;
+    padding: 0.4rem 0.3rem;
+    width: 26%;
+}
+
+.card .par2 {
+    font-size: 17px;
+    color: var(--paraghraph-color);
+}
+
+.head {
+    font-size: 22px;
+    color: var(--Maintext-color);
+}
+
+.bg-m {
+    background-color: var(--main-color);
+
+}
+
+/* Portfolio Section */
+.portfolio {
+    background-color: var(--section-bg);
+}
+
+.portfolio .nav-item {
+    color: var(--Maintext-color) !important;
+    
+}
+
+.portfolio .nav-link {
+    color: var(--Maintext-color) !important;
+    border: none !important;
+    transition: transform 0.3s ease;
+    padding: 0px 1rem !important;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.portfolio .nav-link:hover {
+    color: var(--main-color) !important;
+    cursor: pointer;
+}
+
+.portfolio .nav-link.active {
+    position: relative;
+    color: var(--main-color) !important;
+    background-color: var(--sectionbgcolor);
+}
+
+.portfolio .nav-link.active::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -5px;
+    height: 2px;
+    background-color: currentColor;
+}
+
+/*Contact Section*/
+.contact {
+    background-color: var(--section-bg);
+}
+
+.info-icon{
+    color: var(--main-color);
+}
+
+.social {
+    list-style: none !important;
+    color: var(--main-color);
+}
+
+.head-text {
+    font-size: 1.3rem;
+    color: var(--Maintext-color);
+    font-weight: 600;
+
+}
+
+.social-icons i {
+    color: var(--paraghraph-color) !important;
+    font-size: 20px;
+    margin-left: 0;
+}
+
+.social-icons-d i:hover {
+    color: rgb(202, 71, 132) !important;
+    cursor: pointer;
+}
+
+.social-icons-t i:hover {
+    color: rgb(56, 126, 240) !important;
+    cursor: pointer;
+}
+
+.social-icons-f i:hover {
+    color: rgb(89, 123, 202) !important;
+    cursor: pointer;
+}
+
+.social-icons-g i:hover {
+    color: rgb(225, 11, 72)!important;
+    cursor: pointer;
+}
+
+.social-icons-git i:hover {
+    color: black !important;
+    cursor: pointer;
+}
+
+.btn-color {
+    background-color: var(--main-color);
+    color: white;
+    padding: 1rem 2.5rem;
+}
+
+.btn-color:hover {
+    background-color: #428772;
+    color: white;
+}
+
+/*Footer*/
+footer {
+    padding: 3rem;
+}
+
+footer a {
+    
+    color: var(--main-color);
+    transition: color 0.3s ease;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--second-textColor);
+}
+
+footer .nav-link {
+    color: var(--paraghraph-color);
+    font-size: 16px;
+}
